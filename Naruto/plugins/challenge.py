@@ -2,7 +2,7 @@ import json
 import random
 import asyncio
 from pyrogram import Client, filters
-from Naruto.database.database import get_user, update_user
+from Naruto.database.database import get_user, add_user
 from Naruto.config.config import SUPPORT_CHAT
 
 # Load character data from character.json
@@ -25,7 +25,8 @@ async def spawn_character_in_group(client, message):
         character_id = character["id"]
         character_name = character["name"]
         image_link = character["image"]
-
+        character_level = character["level"]
+        
         await client.send_photo(group_id, image_link, caption=f"Character ID: {character_id}\nAnime: {character['anime']}\nName: {character_name}")
 
         # Store the spawned character in the group's data (for challenges)
