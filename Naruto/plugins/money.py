@@ -7,7 +7,8 @@ from Naruto.config.config import SUPPORT_CHAT
 @Client.on_message(filters.command("checkmoney"))
 async def check_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    username = message.from_user.username
+    user = get_user(user_id, username)
     
     if user:
         money = user.get("money", 0)
