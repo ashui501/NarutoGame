@@ -1,4 +1,5 @@
-from pyrogram import Client, filters, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Naruto.database.database import add_user, get_user
 from Naruto.config.config import SUPPORT_CHAT
 
