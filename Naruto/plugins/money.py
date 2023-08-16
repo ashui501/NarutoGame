@@ -10,16 +10,19 @@ async def check_money(client, message):
     user = get_user(user_id)
     
     if user:
-        username = user.get("username")
         money = user.get("money", 0)
-        await message.reply(f"{username}, your current money: {money}")
+        await message.reply(f"Your current money: {money}")
     else:
         await message.reply("You are not registered in the game.")
+
+# Add more money-related commands or functionality to this plugin as needed
+
 
 @Client.on_message(filters.command("earnmoney"))
 async def earn_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    username = 
+    user = get_user(user_id, username)
     
     if user:
         username = user.get("username")
