@@ -1,14 +1,14 @@
 # API credentials
-API_ID = "your_api_id"
-API_HASH = "your_api_hash"
+API_ID = "19099900"
+API_HASH = "2b445de78e5baf012a0793e60bd4fbf5"
 BOT_TOKEN = "your_bot_token"
 
 # Database configuration
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"
 DB_NAME = "naruto_bot_db"
 
 # Download directory for temporary files
 DOWNLOAD_DIRECTORY = "./"
 
 # Support chat information
-SUPPORT_CHAT = ""
+SUPPORT_CHAT = "NanoSTestingArea"
