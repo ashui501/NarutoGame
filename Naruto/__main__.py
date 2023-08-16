@@ -1,7 +1,7 @@
 import asyncio
 from pyrogram import Client
-from Naruto.config import API_ID, API_HASH, BOT_TOKEN, DOWNLOAD_DIRECTORY
-from Naruto.database import load_db
+from Naruto.config.config import API_ID, API_HASH, BOT_TOKEN, DOWNLOAD_DIRECTORY
+from Naruto.database.database import load_db
 from Naruto.plugins import load_plugins
 
 async def load_start():
@@ -24,6 +24,6 @@ if __name__ == "__main__":
     # Load the database and plugins
     load_db(app)
     load_plugins(app)
-
+    print("started") 
     app.run()
 
