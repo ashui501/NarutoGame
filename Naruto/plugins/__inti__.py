@@ -1,2 +1,2 @@
-from Naruto.plugins import load_plugins
+from Naruto.plugins import plugins
 
