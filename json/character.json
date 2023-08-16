@@ -1,1 +1,74 @@
+[
+    {
+        "id": 1,
+        "anime": "Naruto",
+        "name": "Naruto Uzumaki",
+        "image": "https://telegra.ph/file/1ed226101e9985b76b7c1.jpg",
+        "level": 10
+    },
+    {
+        "id": 2,
+        "anime": "Naruto",
+        "name": "Sasuke Uchiha",
+        "image": "https://telegra.ph/file/bdd0090d3e5a309d55179.jpg",
+        "level": 10
+    },
+    {
+        "id": 3,
+        "anime": "Naruto",
+        "name": "Sakura Haruno",
+        "image": "https://telegra.ph/file/904741030606562d38a04.jpg",
+        "level": 1
+    },
+    {
+        "id": 4,
+        "anime": "Naruto",
+        "name": "Kakashi Hatake",
+        "image": "https://telegra.ph/file/b723713d5d4111c1b6c28.jpg",
+        "level": 6
+    },
+    {
+        "id": 5,
+        "anime": "Naruto",
+        "name": "Itachi Uchiha",
+        "image": "https://telegra.ph/file/6f2b07877336c9e1e1e49.jpg",
+        "level": 10
+    },
+    {
+        "id": 6,
+        "anime": "Naruto",
+        "name": "Jiraiya",
+        "image": "https://telegra.ph/file/3828ee98491f342adde34.jpg",
+        "level": 20
+    },
+    {
+        "id": 7,
+        "anime": "Naruto",
+        "name": "Orochimaru",
+        "image": "https://telegra.ph/file/0870421f75008c94dd25b.jpg",
+        "level": 20
+    },
+    {
+        "id": 8,
+        "anime": "Naruto",
+        "name": "Hinata Hyuga",
+        "image": "https://telegra.ph/file/87dc04bd9adb9a97cb64d.jpg",
+        "level": 10
+    },
+    {
+        "id": 9,
+        "anime": "Naruto",
+        "name": "Rock Lee",
+        "image": "https://telegra.ph/file/0d75c18ec62353a8eb176.jpg",
+        "level": 7
+    },
+    {
+        "id": 10,
+        "anime": "Naruto",
+        "name": "Neji Hyuga",
+        "image": "https://telegra.ph/file/08b3b325385d42abe5e3c.jpg",
+        "level": 6
+    }
+    // Add more characters here...
+]
 
