@@ -1,1 +1,1 @@
-from . import start, money, mission, challenge
+from . import start, money, mission, challenge, character
