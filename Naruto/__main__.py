@@ -1,12 +1,11 @@
 import asyncio
 from pyrogram import Client
-from Naruto.config.config import API_ID, API_HASH, BOT_TOKEN, DOWNLOAD_DIRECTORY
+from Naruto.config.config import API_ID, API_HASH, BOT_TOKEN, DOWNLOAD_DIRECTORY, SUPPORT_CHAT
 from Naruto.database.database import load_db
-from Naruto.plugins import plugins
 
 async def load_start():
-    # Your existing code for loading and starting goes here
-    print("Loading and starting process...")
+    # Your existing code for loading and starting
+    pass
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop_policy().get_event_loop()
@@ -19,11 +18,18 @@ if __name__ == "__main__":
         bot_token=BOT_TOKEN,
         workdir=DOWNLOAD_DIRECTORY,
         sleep_threshold=60,
+        plugins={"root": "Naruto.plugins"},  # Specify the correct path to your plugins
     )
 
     # Load the database and plugins
     load_db(app)
-    plugins(app)
-    print("started") 
-    app.run()
+    load_plugins(app)
 
+    # Send a message to the support chat upon bot startup
+    try:
+        with app:
+            app.send_message(SUPPORT_CHAT, "Naruto Bot has started!")
+    except Exception as e:
+        print(f"Error sending startup message: {e}")
+
+    app.run()
