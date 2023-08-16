@@ -6,12 +6,13 @@ from Naruto.config.config import SUPPORT_CHAT
 @Client.on_message(filters.command("mission"))
 async def mission_command(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    username = message.from_user.username
+    user = get_user(user_id, username)
     
     if user:
         # Simulate a mission with a random reward (for demonstration purposes)
         success_chance = 0.7  # 70% success chance
-        reward_range = (20, 50)  # Reward range (min, max)
+        reward_range = (20, 100)  # Reward range (min, max)
         
         if random.random() <= success_chance:
             reward = random.randint(*reward_range)
