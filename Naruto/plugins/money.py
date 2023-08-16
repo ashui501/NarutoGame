@@ -5,7 +5,7 @@ from Naruto.config.config import SUPPORT_CHAT
 @Client.on_message(filters.command("checkmoney"))
 async def check_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    user = get_user(user_id, username)
     
     if user:
         money = user.get("money", 0)
@@ -16,7 +16,7 @@ async def check_money(client, message):
 @Client.on_message(filters.command("earnmoney"))
 async def earn_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    user = get_user(user_id, username)
     
     if user:
         # Simulate earning money (for demonstration purposes)
@@ -29,7 +29,7 @@ async def earn_money(client, message):
 @Client.on_message(filters.command("spendmoney"))
 async def spend_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    user = get_user(user_id, username)
     
     if user:
         money = user.get("money", 0)
@@ -46,7 +46,7 @@ async def spend_money(client, message):
 @Client.on_message(filters.command("donate"))
 async def donate_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    user = get_user(user_id, username)
     
     if user:
         money = user.get("money", 0)
