@@ -1,0 +1,37 @@
+{
+  "name": "your-app-name",
+  "description": "Naruto Bot",
+  "repository": "https://github.com/yourusername/your-repo.git",
+  "keywords": ["telegram", "bot", "naruto"],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB URI",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB Database Name",
+      "required": true
+    },
+    "SUPPORT_CHAT": {
+      "description": "Your Support Chat Username",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
