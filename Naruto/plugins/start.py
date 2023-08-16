@@ -7,7 +7,7 @@ from Naruto.config.config import SUPPORT_CHAT
 async def start_command(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
-    existing_user = get_user(user_id)
+    existing_user = get_user(user_id, username)
     
     if not existing_user:
         add_user(user_id, username)
