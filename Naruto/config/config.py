@@ -8,7 +8,7 @@ MONGO_URI = "mongodb://localhost:27017/"
 DB_NAME = "naruto_bot_db"
 
 # Download directory for temporary files
-DOWNLOAD_DIRECTORY = "/"
+DOWNLOAD_DIRECTORY = "./"
 
 # Support chat information
 SUPPORT_CHAT = ""
