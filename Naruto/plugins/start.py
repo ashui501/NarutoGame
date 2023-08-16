@@ -7,13 +7,13 @@ from Naruto.config.config import SUPPORT_CHAT
 async def start_command(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
-    existing_user = get_user(user_id)
+    existing_user = get_user(user_id, username)
     
     if not existing_user:
         add_user(user_id, username)
         await message.reply("Welcome to Naruto Bot! You've been added to our database.")
     else:
-        welcome_back_message = f"Welcome back, {username}!"
+        await message.reply(f"Welcome back, {username}!")
         
         # Create an inline keyboard with a button to contact support
         inline_keyboard = InlineKeyboardMarkup([
