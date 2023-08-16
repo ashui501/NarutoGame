@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from Naruto.database.database import add_user, get_user
-from Naruto.config import SUPPORT_CHAT
+from Naruto.config.config import SUPPORT_CHAT
 
 @Client.on_message(filters.command("start"))
 async def start_command(client, message):
