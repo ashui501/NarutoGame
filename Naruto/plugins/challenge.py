@@ -6,7 +6,7 @@ from Naruto.database.database import get_user, update_user
 from Naruto.config.config import SUPPORT_CHAT
 
 # Load character data from character.json
-with open("character.json", "r") as character_file:
+with open("json/character.json", "r") as character_file:
     character_data = json.load(character_file)
 
 # Store the group IDs and their message counts
