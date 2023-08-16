@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # Send a message to the support chat upon bot startup
     try:
         with app:
-            app.send_message(SUPPORT_CHAT, "Naruto Bot has started!")
+            app.send_message(SUPPORT_CHAT, "Naruto Bot has started!\n Dev: @SexyNano")
     except Exception as e:
         print(f"Error sending startup message: {e}")
 
