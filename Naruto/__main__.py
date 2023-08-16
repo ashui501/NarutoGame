@@ -23,8 +23,6 @@ if __name__ == "__main__":
 
     # Load the database and plugins
     load_db(app)
-    load_plugins(app)
-
     # Send a message to the support chat upon bot startup
     try:
         with app:
