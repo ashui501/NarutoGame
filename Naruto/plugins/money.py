@@ -21,7 +21,7 @@ async def check_money(client, message):
 @Client.on_message(filters.command("earnmoney"))
 async def earn_money(client, message):
     user_id = message.from_user.id
-    username = 
+    username = message.from_user.username
     user = get_user(user_id, username)
     
     if user:
@@ -36,7 +36,8 @@ async def earn_money(client, message):
 @Client.on_message(filters.command("spendmoney"))
 async def spend_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    username = message.from_user.username
+    user = get_user(user_id, username)
     
     if user:
         username = user.get("username")
@@ -54,7 +55,8 @@ async def spend_money(client, message):
 @Client.on_message(filters.command("donate"))
 async def donate_money(client, message):
     user_id = message.from_user.id
-    user = get_user(user_id)
+    username = message.from_user.username
+    user = get_user(user_id, username)
     
     if user:
         username = user.get("username")
