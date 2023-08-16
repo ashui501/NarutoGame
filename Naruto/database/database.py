@@ -18,7 +18,7 @@ def add_user(user_id, username):
     users_collection.insert_one(user_data)
 
 def get_user(user_id, username):
-    return users_collection.find_one({"_id": user_id}, {"$inc": {"username": username}})
+    return users_collection.find_one({"_id": user_id, "username": username})
 
 def update_money(user_id, amount):
     users_collection.update_one({"_id": user_id}, {"$inc": {"money": amount}})
