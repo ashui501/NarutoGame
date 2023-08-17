@@ -1,9 +1,9 @@
-from pyrogram import Client, filters
+from pyrogram import app, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Naruto.database.database import add_user, get_user
 from Naruto.config.config import SUPPORT_CHAT
 
-@Client.on_message(filters.command("start"))
+@app.on_message(filters.command("start"))
 async def start_command(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
