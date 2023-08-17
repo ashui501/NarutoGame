@@ -7,10 +7,6 @@ async def load_start():
     # Your existing code for loading and starting
     pass
 
-if __name__ == "__main__":
-    loop = asyncio.get_event_loop_policy().get_event_loop()
-    
-
     app = Client(
         "NarutoBot",
         api_id=API_ID,
