@@ -1,5 +1,5 @@
 import asyncio
-from pyrogram import Client, idle
+from pyrogram import Client
 from Naruto.config.config import API_ID, API_HASH, BOT_TOKEN, DOWNLOAD_DIRECTORY, SUPPORT_CHAT
 from Naruto.database.database import load_db
 
@@ -30,5 +30,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Error sending startup message: {e}")
      
-    app.run()
-    idle() 
+    app.run() 
