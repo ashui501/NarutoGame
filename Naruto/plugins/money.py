@@ -1,10 +1,10 @@
 # money.py
 
-from pyrogram import Client, filters
+from pyrogram import app, filters
 from Naruto.database.database import get_user, update_money
 from Naruto.config.config import SUPPORT_CHAT
 
-@Client.on_message(filters.command("checkmoney"))
+@app.on_message(filters.command("checkmoney"))
 async def check_money(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
@@ -19,7 +19,7 @@ async def check_money(client, message):
 # Add more money-related commands or functionality to this plugin as needed
 
 
-@Client.on_message(filters.command("earnmoney"))
+@app.on_message(filters.command("earnmoney"))
 async def earn_money(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
@@ -34,7 +34,7 @@ async def earn_money(client, message):
     else:
         await message.reply("You are not registered in the game.")
 
-@Client.on_message(filters.command("spendmoney"))
+@app.on_message(filters.command("spendmoney"))
 async def spend_money(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
@@ -53,7 +53,7 @@ async def spend_money(client, message):
     else:
         await message.reply("You are not registered in the game.")
 
-@Client.on_message(filters.command("donate"))
+@app.on_message(filters.command("donate"))
 async def donate_money(client, message):
     user_id = message.from_user.id
     username = message.from_user.username
