@@ -29,7 +29,6 @@ if __name__ == "__main__":
             app.send_message(SUPPORT_CHAT, "Naruto Bot has started!\nDev: @SexyNano")
     except Exception as e:
         print(f"Error sending startup message: {e}")
-
-    print("started") 
+     
     app.run()
     idle() 
