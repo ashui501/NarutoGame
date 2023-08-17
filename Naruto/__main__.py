@@ -9,7 +9,7 @@ async def load_start():
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop_policy().get_event_loop()
-    loop.run_until_complete(load_start())
+    
 
     app = Client(
         "NarutoBot",
