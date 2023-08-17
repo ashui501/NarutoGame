@@ -25,13 +25,11 @@ if __name__ == "__main__":
     load_db(app)
     
     # Send a message to the support chat upon bot startup
-    async def send_startup_message():
-        try:
-            async with app:
-                await app.send_message(SUPPORT_CHAT, "Naruto Bot has started!\nDev: @SexyNano")
-                print("Bot has been deployed successfully!")
-        except Exception as e:
-            print(f"Error sending startup message: {e}")
+    try:
+        with app:
+            app.send_message(SUPPORT_CHAT, "Naruto Bot has started!\nDev: @SexyNano")
+            print("Bot deployed successfully.")
+    except Exception as e:
+        print(f"Error sending startup message: {e}")
      
-    loop.run_until_complete(send_startup_message())
     app.run()
