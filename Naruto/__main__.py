@@ -1,5 +1,5 @@
 import asyncio
-from pyrogram import Client
+from pyrogram import Client, idle
 from Naruto.config.config import API_ID, API_HASH, BOT_TOKEN, DOWNLOAD_DIRECTORY, SUPPORT_CHAT
 from Naruto.database.database import load_db
 
@@ -29,3 +29,4 @@ async def load_start():
         print(f"Error sending startup message: {e}")
      
     app.run()
+    idle() 
