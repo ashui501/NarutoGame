@@ -1,14 +1,14 @@
 # API credentials
-API_ID = "24545226"
-API_HASH = "c9cc641ca738adf1ea5b29f3dd99315d"
-BOT_TOKEN = "6206599982:AAGMtdPmgw7wRF5EsdREiJT3Qb9Yy8ALIVE"
+API_ID = "24074986"
+API_HASH = "f4f6272a85d0e50e39a24cb378be118d"
+BOT_TOKEN = "6638407849:AAETj6U7bNXJuDTmLWTYL8SuTzl2igXFNlE"
 
 # Database configuration
-MONGO_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"
-DB_NAME = "naruto_game_db"
+MONGO_URI = "mongodb+srv://tiwarireeta004:peqxLEd36RAg7ors@cluster0.furypd3.mongodb.net/?retryWrites=true&w=majority"
+DB_NAME = "narutodb"
 
 # Download directory for temporary files
 DOWNLOAD_DIRECTORY = "./"
 
 # Support chat information
-SUPPORT_CHAT = "NanoSTestingArea"
+SUPPORT_CHAT = "TOJIKA_SUPPORT"
